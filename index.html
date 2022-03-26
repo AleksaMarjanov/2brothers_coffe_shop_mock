@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="index.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Nav Bar -->
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
        <div class="container">
         <a href="./index.html" class="navbar-brand">
-         2 Brothers
+          <img src="./images/LogoLight.svg" width="50%">
          </a>
          <button 
          class="navbar-toggler" 
@@ -31,8 +33,11 @@
               <a href="./index.html" class="nav-link">Home</a>
             </li>
              <li class="nav-item">
-               <a href="./About.html" class="nav-link">About & Menu</a>
+               <a href="#about" class="nav-link">About</a>
              </li>
+             <li class="nav-item">
+              <a href="./Menu.html" class="nav-link">Menu</a>
+            </li>
              <li class="nav-item">
               <a href="./Order.html" class="nav-link">Order Online</a>
             </li>
@@ -109,7 +114,7 @@
              <p class="card-text">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis?
              </p>
-             <a href="#" class="btn btn-dark">Add To Cart</a>
+             <a href="Order.html" class="btn btn-dark">Add To Cart</a>
            </div>
           </div>
         </div>
@@ -125,20 +130,133 @@
              <p class="card-text">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis?
              </p>
-             <a href="#" class="btn btn-primary">Read More</a>
+             <a href="Menu.html" class="btn btn-primary">Read More</a>
            </div>
           </div>
         </div>
        </div>
      </div>
    </section>
+
+   <hr>
+
+   <!-- About us -->
+   <section id="about" class="p-5">
+     <div class="container">
+       <div class="row align-item-center justify-content-between">
+         <div class="col-md col-xs-6 col-sm-3 hover-zoomin">
+           <a title=""> <img src="images/About.jpg" id="about" class="img-fluid" alt=""> </a>
+         </div>
+         <div class="col-md p-5">
+           <h2> A Few Words About Us</h2>
+           <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi obcaecati dolore eaque adipisci minima accusamus, dignissimos ullam fuga culpa.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, veniam voluptatibus illo, est nemo iusto eligendi, dicta aperiam quibusdam architecto officia ratione quisquam. Ipsum architecto cum necessitatibus optio asperiores laudantium!</p>
+          <a href="About.html" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Learn More</a>
+        </div>
+       </div>
+     </div>
+   </section>
+
+   <section id="promotions" class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-item-center justify-content-between">
+        
+        <div class="col-md p-5">
+          <h2> We Are Always Running Interesting Promotions </h2>
+          <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi obcaecati dolore eaque adipisci minima accusamus, dignissimos ullam fuga culpa.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, veniam voluptatibus illo, est nemo iusto eligendi, dicta aperiam quibusdam architecto officia ratione quisquam. Ipsum architecto cum necessitatibus optio asperiores laudantium!</p>
+         
+       </div>
+       <div class="col-md col-xs-6 col-sm-3 hover-zoomin">
+        <a title=""> <img src="images/3.png" id="about" class="img-fluid" alt=""> </a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="questions" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion accordion-flush" id="questions">
+      <!-- Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#question-one" 
+          >
+            Where Are You Located?
+          </button>
+        </h2>
+        <div id="question-one" class="accordion-collapse collapse"  
+        data-bs-parent="#questions">
+          <div class="accordion-body">We are located in Serbia, Svetosavski Trg 6 B, 26300 Vrsac </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#question-two" 
+          >
+           How Much Caffeine Can I Have A Day?
+          </button>
+        </h2>
+        <div id="question-two" class="accordion-collapse collapse"  
+        data-bs-parent="#questions">
+          <div class="accordion-body">It is recommended 
+            that adults over the age of 18 consume no more than 400mg of caffeine per day and no more than 200mg in one serving. You can safely
+             consume up to two servings of our powdered products, and four servings of our whole bean in a day.</div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#question-three" 
+          >
+          Do You Have Decaf?
+          </button>
+        </h2>
+        <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" 
+        data-bs-parent="#questions">
+          <div class="accordion-body">Not yet, but it could be a possibility in the future for UnioQorns who don’t like that caffeine buzz.</div>
+        </div>
+      </div>
+  </section>
+
+  <section class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contant Info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Location:</span> Svetosavski Trg 6 B, 26300 Vrsac,Serbia
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Phone Number:</span> +(381) 63-765-232
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Open-Close:</span> Mon-Fri 07:30-17:00, Sat-Sun 07:30-22:00
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
      <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   <script src="index.js"></script>
+   <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
 
-    
 </body>
 </html>
+
