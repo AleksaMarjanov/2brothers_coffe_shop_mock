@@ -39,7 +39,7 @@
               <a href="./Menu.html" class="nav-link">Menu</a>
             </li>
              <li class="nav-item">
-              <a href="./Order.html" class="nav-link">Order Online</a>
+              <a href="./Gallery.html" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item">
               <a href="./Contact.html" class="nav-link">Contact</a>
@@ -54,9 +54,9 @@
      <div class="container"> 
       <div class="d-sm-flex align-items-center justify-content-between">
          <div>
-           <h1><span class="text-warning">Try Our Coffee</span> At 2 Brothers</h1>
+           <h1><span class="text-warning">Join</span> Our Team</h1>
            <p class="lead my-4">Lorem ipsum dolor sit  amet consectetur adipisicing elit. Commodi quia at tempore delectus vero nam eius suscipit deserunt nostrum magni in tenetur, sunt sit dolorem amet atque provident alias ducimus.</p>
-          <button class="btn btn-primary btn-lg">Check Our Menu</button>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#join">Apply</button>
           </div>
         <img class="img-fluid w-50 d-none d-sm-block" src="./images/coffee1.svg">
        </div>
@@ -67,7 +67,7 @@
    <section class="bg-primary text-light p-5">
      <div class="container">
        <div class="d-md-flex justify-content-between align-item-center">
-         <h3 class="mb-3 mb-md-0">Get Coupon For 30%</h3>
+         <h3 class="mb-3 mb-md-0">Get Coupon 30% For Any Drink</h3>
          <div class="input-group  coupon-input" >
           <input type="text" class="form-control" placeholder="Enter Email" 
           aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -83,27 +83,35 @@
 
    <!-- Boxes -->
 
-   <section class="p-5">
+    <section class="p-5">
      <div class="container">
-       <div class="row text-center g-4">
+       <div class="row text-center g-4"> 
+         <!-- First Card Map Location-->
          <div class="col-md">
-           <div class="card bg-dark text-light">
+          <div class="card img-fluid text-light" >
+            <img src="./images/location.jpg" class="card-img-top" alt="menu picture" style="width:100%">
+          <div class="card-img-overlay">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <i class="bi bi-cup"></i>
+                <i class="bi bi-geo-alt"></i>
               </div>
               <h3 class="card-title mb-3">
-                Visit
+                Visit Us
               </h3>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis?
+                We know location is important, and thats why we choose downtown of Vrsac
               </p>
-              <a href="#" class="btn btn-primary">Check Our Location</a>
+              <a href="#map" class="btn btn-primary">Check Our Location</a>
             </div>
-           </div>
-         </div>
+            </div>
+
+          </div>
+         </div> 
+         <!-- Second Card Order -->
          <div class="col-md">
-          <div class="card bg-secondary text-light">
+          <div class="card img-fluid text-light" >
+            <img src="./images/order.webp" class="card-img-top" alt="menu picture" style="width:100%">
+          <div class="card-img-overlay">
            <div class="card-body text-center">
              <div class="h1 mb-3">
                <i class="bi bi-cart4"></i>
@@ -114,15 +122,19 @@
              <p class="card-text">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis?
              </p>
-             <a href="Order.html" class="btn btn-dark">Add To Cart</a>
+             <a href="#" class="btn btn-dark">Add To Cart</a>
+           </div>
            </div>
           </div>
         </div>
+        <!-- Third Card Menu -->
         <div class="col-md">
-          <div class="card bg-dark text-light">
+          <div class="card img-fluid text-light" >
+            <img src="./images/menu.jpeg" class="card-img-top" alt="menu picture" style="width:100%">
+          <div class="card-img-overlay">
            <div class="card-body text-center">
              <div class="h1 mb-3">
-               <i class="bi bi-cup"></i>
+               <i class="bi bi-menu-up"></i>
              </div>
              <h3 class="card-title mb-3">
                Check Our Menu
@@ -133,12 +145,13 @@
              <a href="Menu.html" class="btn btn-primary">Read More</a>
            </div>
           </div>
+          </div>
         </div>
        </div>
      </div>
-   </section>
+   </section> 
 
-   <hr>
+ 
 
    <!-- About us -->
    <section id="about" class="p-5">
@@ -151,7 +164,7 @@
            <h2> A Few Words About Us</h2>
            <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi obcaecati dolore eaque adipisci minima accusamus, dignissimos ullam fuga culpa.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, veniam voluptatibus illo, est nemo iusto eligendi, dicta aperiam quibusdam architecto officia ratione quisquam. Ipsum architecto cum necessitatibus optio asperiores laudantium!</p>
-          <a href="About.html" class="btn btn-light mt-3">
+          <a href="#about" class="btn btn-light mt-3">
             <i class="bi bi-chevron-right"></i> Learn More</a>
         </div>
        </div>
@@ -225,11 +238,12 @@
       </div>
   </section>
 
-  <section class="p-5">
+  <!-- Contact Info & Map -->
+  <section class="p-5 bg-secondary text-light">
     <div class="container">
       <div class="row g-4">
         <div class="col-md">
-          <h2 class="text-center mb-4">Contant Info</h2>
+          <h2 class="text-center mb-4">Contact Info</h2>
           <ul class="list-group list-group-flush lead">
             <li class="list-group-item">
               <span class="fw-bold">Location:</span> Svetosavski Trg 6 B, 26300 Vrsac,Serbia
@@ -249,6 +263,62 @@
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2022 Aleksa Marjanov</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+
+  </footer>
+
+  <!-- Modal -->
+<div class="modal fade" id="join" tabindex="-1" aria-labelledby="joinLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Application</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Fill out this form and we will get back to you</p>
+        <form>
+          <div class="mb-3">
+            <label for="first-name" class="col-form-label">
+              First Name:
+            </label>
+            <input type="text" class="form-control" id="first-name">
+          </div>
+          <div class="mb-3">
+            <label for="last-name" class="col-form-label">
+              Last Name:
+            </label>
+            <input type="text" class="form-control" id="last-name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">
+              Email:
+            </label>
+            <input type="text" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="col-form-label">
+              Phone:
+            </label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick=apply() id="button-addon">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
      <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
