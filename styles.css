@@ -74,6 +74,7 @@ html * {
 .wrapper h1 {
   font-size: 40px;
   font-weight: 600;
+  margin-top: 30px;
   text-shadow: 3px 4px 5px #000;
 }
 
@@ -104,10 +105,25 @@ table .w-30 {
 }
 
 table {
-  font-size: 25px;
+  font-size: 30px;
   letter-spacing: 0.1rem;
   text-align: center;
   justify-content: center;
   display: block;
-  padding-left: 350px;
+  font-weight: 300;
+  text-shadow: 0.3px 0.4px 0.5px #000;
+  cursor: pointer;
+  border: #000;
+}
+
+footer a {
+  color: #70726f;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726f;
+  transition: all 0.5s ease;
+}
+
+footer:hover a:first-child {
+  color: white;
 }
