@@ -105,7 +105,7 @@ table .w-30 {
 }
 
 table {
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 0.1rem;
   text-align: center;
   justify-content: center;
@@ -122,8 +122,4 @@ footer a {
   padding: 10px;
   border-right: 1px solid #70726f;
   transition: all 0.5s ease;
-}
-
-footer:hover a:first-child {
-  color: white;
 }
