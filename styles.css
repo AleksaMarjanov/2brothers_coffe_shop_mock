@@ -3,10 +3,10 @@
     width: 50%;
   }
 }
-.row > * {
+/* .row > * {
   padding-right: 0 !important;
   padding-left: 0 !important;
-}
+} */
 
 body {
   margin: 0;
@@ -138,6 +138,6 @@ footer a {
   align-content: center;
 }
 
-.coffeeBg {
-  background: url("./images/carousel.jpeg") no-repeat center center;
+.form {
+  font-weight: 600;
 }

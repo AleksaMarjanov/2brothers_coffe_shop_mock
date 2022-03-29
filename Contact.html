@@ -47,29 +47,53 @@
       </div>
   </nav>
 
-<section class="bg-primary p-lg-0 pt-lg-5 text-center text-sm-start text-light p-5">
+<section class="p-lg-0 pt-lg-5 text-center text-sm-start  p-5">
   <div class="container mt-5">
       <h1>Contact</h1>
-      <form class="row g-3">
+      <form class="row g-3" action="https://formsubmit.co/aleksa.marjanov@outlook.com" method="POST">
         <div class="col-md-6">
           <label for="firstName" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="firstName" required>
+          <input type="text" class="form-control" name="name" id="firstName" required>
         </div>
         <div class="col-md-6">
           <label for="lastName" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="lastName" required>
+          <input type="text" class="form-control" name="Last Name" id="lastName" required>
         </div>
-        <div class="col-md-6">
-          <label for="emailInfo" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emailInfo" required>
+        <div class="col-md-8">
+          <label for="emailInfo" class="form-label">E-mail</label>
+          <input type="email" class="form-control" name="email" id="emailInfo" required>
         </div>
-        <textarea name="feedback" id="feedback" cols="20" rows="5" placeholder="Give me a feedback"></textarea>
+        <div class="col-md-4">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (Area) 111 - 2312">
+        </div>
+        <div class="col-md-14">
+          <label for="comments" class="form-label">Feedback, questions?</label>
+          <textarea class="form-control" name="Feedback, questions?" id="comments" rows="3"></textarea>
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
       </form>
       
   </div>
 </section>
 
-  
+ <!-- Footer -->
+ <footer class="p-5 bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead">Copyright &copy; 2022 Aleksa Marjanov</p>
+    <a href="https://www.instagram.com/mr.white______/" target="_blank">
+      <i class="bi bi-instagram h1"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/aleksamarjanov/" target="_blank">
+      <i class="bi bi-linkedin h1"></i>
+    </a>
+    <a href="https://www.github.com/AleksaMarjanov" target="_blank">
+      <i class="bi bi-github h1"></i>
+    </a>
+  </div>
+</footer>  
 
      <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
