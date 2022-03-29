@@ -3,6 +3,11 @@
     width: 50%;
   }
 }
+.row > * {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -122,4 +127,17 @@ footer a {
   padding: 10px;
   border-right: 1px solid #70726f;
   transition: all 0.5s ease;
+}
+
+.coffee {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.coffeeBg {
+  background: url("./images/carousel.jpeg") no-repeat center center;
 }
