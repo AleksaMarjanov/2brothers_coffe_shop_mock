@@ -53,7 +53,7 @@ html * {
   transform: scale(1.1);
 }
 /* Adding shadow on card's text */
-.card-body {
+.card {
   font-size: 18px;
   font-weight: 900;
   text-shadow: 3px 4px 5px #000;
@@ -71,7 +71,7 @@ html * {
   margin-top: 2rem;
   background-color: #000;
   opacity: 0.6;
-  border-radius: 0px;
+  border-radius: 30px;
   box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
   overflow: auto;
 }
@@ -90,7 +90,7 @@ html * {
   background-size: 100%;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .wrapper {
     display: block;
     width: auto;
@@ -99,7 +99,7 @@ html * {
   .card-body {
     overflow: auto;
   }
-}
+} */
 
 /* Styling table */
 table .w-10 {
@@ -111,12 +111,9 @@ table .w-30 {
 
 table {
   font-size: 20px;
-  letter-spacing: 0.1rem;
   text-align: center;
   justify-content: center;
   display: block;
-  font-weight: 300;
-  text-shadow: 0.3px 0.4px 0.5px #000;
   cursor: pointer;
   border: #000;
 }
@@ -129,15 +126,31 @@ footer a {
   transition: all 0.5s ease;
 }
 
-.coffee {
+/* .coffee {
   float: none;
   margin: 0 auto;
   display: block;
   text-align: center;
   align-items: center;
   align-content: center;
-}
+} */
 
 .form {
   font-weight: 600;
+}
+.card-title:last-child {
+  border-radius: 0 !important;
+}
+
+.card-title {
+  padding: 0 !important;
+  background-color: unset !important;
+  border-top: unset !important;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
 }

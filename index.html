@@ -38,9 +38,6 @@
              <li class="nav-item">
               <a href="./Menu.html" class="nav-link">Menu</a>
             </li>
-             <li class="nav-item">
-              <a href="./Gallery.html" class="nav-link">Gallery</a>
-            </li>
             <li class="nav-item">
               <a href="./Contact.html" class="nav-link">Contact</a>
             </li>
@@ -70,88 +67,65 @@
          <h3 class="mb-3 mb-md-0">Get Coupon 30% For Any Drink</h3>
          <div class="input-group  coupon-input" >
           <input type="text" class="form-control" placeholder="Enter Email" 
-          aria-label="Recipient's username" aria-describedby="button-addon2">
+          aria-label="Recipient's username" aria-describedby="button-addon2" required>
           <!-- Maybe add Validation here for email -->
-          <button class="btn btn-dark btn-lg" type="button" onclick=email() id="button-addon2">Submit</button>
+          <button class="btn btn-dark btn-lg" id="button-addon2">Submit</button>
         </div>
         
         </div>
        </div>
      </div>
-
-   </section>
-
-   <!-- Boxes -->
-
-    <section class="p-5">
-     <div class="container">
-       <div class="row text-center g-4"> 
-         <!-- First Card Map Location-->
-         <div class="col-md-4">
-          <div class="card img-fluid text-light" >
-            <img src="./images/location.jpg" class="card-img-top" alt="menu picture" style="width:100%">
+    </section>
+<!--Section: Boxes-->
+<!-- p-5 gives container padding  -->
+<section class="p-5 ">
+  <div class="container">
+    <div class="row text-center">
+      <!-- Col-md-4 will split each column equal size of container, bootstrap works with 12columns in grid system -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white">
+          <img src="./images/location.jpg" class="card-img rounded" alt="...">
           <div class="card-img-overlay">
-            <div class="card-body text-center">
-              <div class="h1 mb-3">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <h3 class="card-title mb-3">
-                Visit Us
-              </h3>
-              <p class="card-text">
-                We know location is important, and thats why we choose downtown of Vrsac
-              </p>
-              <a href="#map" class="btn btn-primary">Check Our Location</a>
+            <div class="h2">
+              <i class="bi bi-geo-alt"></i>
             </div>
-            </div>
-
-          </div>
-         </div> 
-         <!-- Second Card Order -->
-         <div class="col-md-4">
-          <div class="card img-fluid text-light" >
-            <img src="./images/order.webp" class="card-img-top" alt="menu picture" style="width:100%">
-          <div class="card-img-overlay">
-           <div class="card-body text-center">
-             <div class="h1 mb-3">
-               <i class="bi bi-cart4"></i>
-             </div>
-             <h3 class="card-title mb-3">
-               Order
-             </h3>
-             <p class="card-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis?
-             </p>
-             <a href="#" class="btn btn-dark">Add To Cart</a>
-           </div>
-           </div>
+            <h5 class="card-title">Visit Us</h5>
+            <p class="card-text">We know that location matters!</p>
+            <a href="#map" class="btn btn-primary">Location</a>
           </div>
         </div>
-        <!-- Third Card Menu -->
-        <div class="col-md-4">
-          <div class="card img-fluid text-light" >
-            <img src="./images/menu.jpeg" class="card-img-top" alt="menu picture" style="width:100%">
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-white">
+          <img src="./images/menu.jpeg" class="card-img rounded" alt="...">
           <div class="card-img-overlay">
-           <div class="card-body text-center">
-             <div class="h1 mb-3">
-               <i class="bi bi-menu-up"></i>
-             </div>
-             <h3 class="card-title mb-3">
-               Check Our Menu
-             </h3>
-             <p class="card-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis?
-             </p>
-             <a href="Menu.html" class="btn btn-primary">Read More</a>
-           </div>
-          </div>
+            <div class="h2">
+              <i class="bi bi-menu-up"></i>
+            </div>
+            <h5 class="card-title">Menu</h5>
+            <p class="card-text">Check Our Menu</p>
+            <a href="./Menu.html" class="btn btn-success">Read More</a>
           </div>
         </div>
-       </div>
-     </div>
-   </section> 
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-white">
+          <img src="./images/order.webp" class="card-img rounded" alt="...">
+          <div class="card-img-overlay">
+            <div class="h2">
+              <i class="bi bi-cart4"></i>
+            </div>
+            <h5 class="card-title">Shop</h5>
+            <p class="card-text">All Coffees!</p>
+            <a href="#" class="btn btn-dark">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
- 
+   <hr class="my-5">
 
    <!-- About us -->
    <section id="about" class="p-5">
@@ -164,7 +138,7 @@
            <h2> A Few Words About Us</h2>
            <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi obcaecati dolore eaque adipisci minima accusamus, dignissimos ullam fuga culpa.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, veniam voluptatibus illo, est nemo iusto eligendi, dicta aperiam quibusdam architecto officia ratione quisquam. Ipsum architecto cum necessitatibus optio asperiores laudantium!</p>
-          <a href="#about" class="btn btn-light mt-3">
+          <a href="./About.html" class="btn btn-light mt-3">
             <i class="bi bi-chevron-right"></i> Learn More</a>
         </div>
        </div>
@@ -237,9 +211,9 @@
         </div>
       </div>
   </section>
-
+  <hr class="my-5">
   <!-- Contact Info & Map -->
-  <section class="p-5 bg-secondary  text-light">
+  <section class="p-5 bg-light  text-dark">
     <div class="container">
       <div class="row g-4">
         <div class="col-md">
