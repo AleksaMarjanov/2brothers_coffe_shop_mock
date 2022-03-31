@@ -90,17 +90,6 @@ html * {
   background-size: 100%;
 }
 
-/* @media (max-width: 768px) {
-  .wrapper {
-    display: block;
-    width: auto;
-    overflow: hidden;
-  }
-  .card-body {
-    overflow: auto;
-  }
-} */
-
 /* Styling table */
 table .w-10 {
   width: 10%;
@@ -108,14 +97,8 @@ table .w-10 {
 table .w-30 {
   width: 30%;
 }
-
-table {
-  font-size: 20px;
-  text-align: center;
-  justify-content: center;
-  display: block;
-  cursor: pointer;
-  border: #000;
+.rounded {
+  border-radius: 50%;
 }
 
 footer a {
@@ -125,15 +108,6 @@ footer a {
   border-right: 1px solid #70726f;
   transition: all 0.5s ease;
 }
-
-/* .coffee {
-  float: none;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-} */
 
 .form {
   font-weight: 600;
@@ -153,4 +127,13 @@ footer a {
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
+}
+
+#Ristretto,
+#Latte,
+#Espresso,
+#Americano {
+  text-shadow: 0px 0px 1px #000;
+  font-weight: 600;
+  font-size: 20px;
 }
