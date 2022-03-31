@@ -137,3 +137,17 @@ footer a {
   font-weight: 600;
   font-size: 20px;
 }
+
+#wrapper {
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #wrapper {
+    object-fit: cover;
+  }
+  #wrapper > img {
+    height: 100%;
+    width: auto;
+  }
+}
