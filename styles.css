@@ -151,3 +151,9 @@ footer a {
     width: auto;
   }
 }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: rgb(0, 0, 0, 0.6);
+  
+}
