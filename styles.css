@@ -53,7 +53,7 @@ html * {
 /* Responsive jumbotron - Background image with text on menu page */
 .bg-imageMenu {
   position: relative;
-  background: url("./images/carousel.jpeg") no-repeat center center;
+  background: url("./images/carousel.webp") no-repeat center center;
   width: 100%;
   background-size: cover;
 }
