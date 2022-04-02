@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="index.js" async></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' /> -->
+    <!-- <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="styles.css">
-    </noscript>
+    </noscript> -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="preload" as="font">
 </head>
 <body>
@@ -88,8 +90,9 @@
     <div class="row g-4 justify-content-center text-center">
       <!-- Col-md-4 will split each column equal size of container, bootstrap works with 12columns in grid system -->
       <div class="col-md-4" >
-        <div class="card cardCont bg-dark text-white" style="width: 300px;">
-          <img src="./images/location1.webp" class="card-img rounded" alt="...">
+        <div class="card cardCont bg-dark text-white" style="width: 300px; height: 215px;">
+          <img src="https://images.pexels.com/photos/697662/pexels-photo-697662.jpeg?auto=compress&cs=tinysrgb&w=10&h=750&dpr=1" 
+          class="card-img rounded" alt="Location Map" style="height: 215px;">
           <div class="card-img-overlay">
             <div class="h2" id="icon">
               <i class="bi bi-geo-alt"></i>
@@ -101,8 +104,8 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card  cardCont bg-dark text-white" style="width: 300px;">
-          <img src="./images/menu.webp" class="card-img rounded" alt="...">
+        <div class="card  cardCont bg-dark text-white" style="width: 300px; height: 215px;">
+          <img src="https://images.pexels.com/photos/8616015/pexels-photo-8616015.jpeg?auto=compress&cs=tinysrgb&w=10&h=750&dpr=1" class="card-img rounded" alt="menu">
           <div class="card-img-overlay">
             <div class="h2" id="icon">
               <i class="bi bi-menu-up"></i>
@@ -114,8 +117,8 @@
         </div>
       </div>
       <div class="col-md-4" >
-        <div class="card cardCont bg-dark text-white" style="width: 300px;">
-          <img src="./images/order1.webp" class="card-img rounded" alt="...">
+        <div class="card cardCont bg-dark text-white" style="width: 300px; height: 215px;">
+          <img src="https://images.pexels.com/photos/1309778/pexels-photo-1309778.jpeg?auto=compress&cs=tinysrgb&w=10&h=750&dpr=1" style="height: 215px;" class="card-img rounded" alt="Shopping Cart">
           <div class="card-img-overlay">
             <div class="h2" id="icon">
               <i class="bi bi-cart4"></i>
@@ -312,8 +315,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-
+   <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> -->
+   <script src="index.js" async></script>
 </body>
 </html>
 
