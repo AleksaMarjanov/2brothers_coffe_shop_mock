@@ -91,13 +91,13 @@ footer a {
 /* Adding shadow on card's text */
 .card-title,
 .card-text {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 900;
   text-shadow: 3px 4px 5px #000;
 }
 .lead1,
 #icon {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   text-shadow: 3px 4px 5px #000;
   text-align: center;
