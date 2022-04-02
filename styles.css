@@ -3,10 +3,6 @@
     width: 50%;
   }
 }
-/* .row > * {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-} */
 
 body {
   margin: 0;
@@ -24,7 +20,7 @@ body::before {
   height: 100%;
   border-radius: 10px;
 }
-
+/* Making Roboto font accesible to all html pages */
 html * {
   font-family: "Roboto", sans-serif;
 }
@@ -52,55 +48,16 @@ html * {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* Adding shadow on card's text */
-.card {
-  font-size: 18px;
-  font-weight: 900;
-  text-shadow: 3px 4px 5px #000;
-}
-.lead1 {
-  font-size: 30px;
-  font-weight: 600;
-  text-shadow: 3px 4px 5px #000;
-  text-align: left;
-}
-/* Box shadow for text in jumbotron */
-.wrapper {
-  display: block;
-  width: 50%;
-  margin-top: 2rem;
-  background-color: #000;
-  opacity: 0.6;
-  border-radius: 30px;
-  box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
-  overflow: auto;
-}
 
-.wrapper h1 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-top: 30px;
-  text-shadow: 3px 4px 5px #000;
-}
 
+/* Responsive jumbotron - Background image with text on menu page */
 .bg-imageMenu {
   position: relative;
   background: url("./images/carousel.jpeg") no-repeat center center;
   width: 100%;
-  background-size: 100%;
+  background-size: cover;
 }
-
-/* Styling table */
-table .w-10 {
-  width: 10%;
-}
-table .w-30 {
-  width: 30%;
-}
-.rounded {
-  border-radius: 50%;
-}
-
+/* Adding style to footer social icons when hovered */
 footer a {
   color: #70726f;
   font-size: 20px;
@@ -112,6 +69,8 @@ footer a {
 .form {
   font-weight: 600;
 }
+
+/* Styling cards so it looks a little bit better with text inside of it */
 .card-title:last-child {
   border-radius: 0 !important;
 }
@@ -129,6 +88,22 @@ footer a {
   height: 100%;
 }
 
+/* Adding shadow on card's text */
+.card-title,
+.card-text {
+  font-size: 15px;
+  font-weight: 900;
+  text-shadow: 3px 4px 5px #000;
+}
+.lead1,
+#icon {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 3px 4px 5px #000;
+  text-align: center;
+}
+
+/* Adding shadow to content on menu page */
 #Ristretto,
 #Latte,
 #Espresso,
@@ -138,31 +113,71 @@ footer a {
   font-size: 20px;
 }
 
-#wrapper {
-  object-fit: cover;
-}
-
-@media (max-width: 768) {
-  #wrapper {
-    object-fit: cover;
-  }
-  #wrapper > img {
-    height: 100%;
-    width: auto;
-  }
-}
-
+/* Making prev/next icons on page about more visible */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: rgb(0, 0, 0, 0.6);
   
 }
-
+/* Centering carousel elements in about page */
 img.d-block {
-  width: 420px;
   height: 640px;
+  width: 480px;
   float: none;
   margin: 0 auto;
   display: block;
   text-align: center;
+}
+
+/* Styling buttons so they don't span across the div */
+
+.btn1 {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn1:hover {
+    opacity: 0.9;
+}
+
+
+/* Box shadow for text in jumbotron */
+.wrapper {
+  display: block;
+  background-color: #000;
+  opacity: 0.6;
+  box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  width:100%;
+  text-align:center;
+   
+}
+
+.wrapper h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-shadow: 3px 4px 5px #000;
+
+}
+
+/* Mobile phone add margin to h1 element */
+@media (max-width: 768px) {
+  .wrapper h1{
+    margin-top: 5rem;
+  }
+  .carousel-inner img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+/*  Centering all cards inside of container*/
+.cardCont {
+  max-width: 300px;
+  margin: 0 auto;
 }
